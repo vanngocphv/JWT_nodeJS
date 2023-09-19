@@ -1,0 +1,16 @@
+<nav>
+  <h1>
+    <img class="smoothie" src="/images/smoothie.png" alt="/" /><a href="/">
+      JWT - <%= title %> website
+    </a>
+  </h1>
+  <ul>
+    <% if(user == null) { %>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/signup" class="btn">Signup</a></li>
+    <% } else { %>
+    <li>Hello, <%= user.name %></li>
+    <li><a href="/logout">Logout</a></li>
+    <% } %>
+  </ul>
+</nav>

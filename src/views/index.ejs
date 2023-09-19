@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Welcome Page</title>
+  </head>
+  <body>
+    <%- include('./partials/_header.ejs', {title: 'Welcome', user: user}) %>
+    <div class="container-button">
+      <div class="heading">
+        <a href="./recipe" class="btn">Recipes</a>
+      </div>
+    </div>
+
+    <%- include('./partials/_footer.ejs') %>
+  </body>
+</html>
